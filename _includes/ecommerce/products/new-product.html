@@ -1,0 +1,144 @@
+<div class="flex flex-wrap -mx-3">
+  <div class="w-full max-w-full px-3 flex-0">
+    <div multisteps-form class="mb-12">
+      <div class="flex flex-wrap -mx-3">
+        <div class="w-full max-w-full px-3 mx-auto my-12 flex-0 lg:w-8/12">
+          <div class="grid grid-cols-4">
+            <button aria-controls="info" type="button" class="before:w-3.4 before:h-3.4 before:rounded-circle before:scale-120 rounded-0 -indent-330 relative m-0 cursor-pointer border-none bg-transparent px-1.5 pb-0.5 pt-5 text-slate-700 outline-none transition-all ease-linear before:absolute before:top-0 before:left-1/2 before:z-30 before:box-border before:block before:-translate-x-1/2 before:border-2 before:border-solid before:border-current before:bg-current before:transition-all before:ease-linear before:content-[''] sm:indent-0" title="Product Info"><span class="text-slate-400">1. Product Info</span></button>
+            <button aria-controls="media" type="button" class="before:w-3.4 before:h-3.4 before:rounded-circle after:top-1.25 rounded-0 -indent-330 relative m-0 cursor-pointer border-none bg-transparent px-1.5 pb-0.5 pt-5 text-slate-100 outline-none transition-all ease-linear before:absolute before:top-0 before:left-1/2 before:z-30 before:box-border before:block before:-translate-x-1/2 before:border-2 before:border-solid before:border-current before:bg-white before:transition-all before:ease-linear before:content-[''] after:absolute after:left-[calc(-50%-13px/2)] after:z-10 after:block after:h-0.5 after:w-full after:bg-current after:transition-all after:ease-linear after:content-[''] sm:indent-0" title="Media">2. Media</button>
+            <button aria-controls="socials" type="button" class="before:w-3.4 before:h-3.4 before:rounded-circle after:top-1.25 rounded-0 -indent-330 relative m-0 cursor-pointer border-none bg-transparent px-1.5 pb-0.5 pt-5 text-slate-100 outline-none transition-all ease-linear before:absolute before:top-0 before:left-1/2 before:z-30 before:box-border before:block before:-translate-x-1/2 before:border-2 before:border-solid before:border-current before:bg-white before:transition-all before:ease-linear before:content-[''] after:absolute after:left-[calc(-50%-13px/2)] after:z-10 after:block after:h-0.5 after:w-full after:bg-current after:transition-all after:ease-linear after:content-[''] sm:indent-0" title="Socials">3. Socials</button>
+            <button aria-controls="pricing" type="button" class="before:w-3.4 before:h-3.4 before:rounded-circle after:top-1.25 rounded-0 -indent-330 relative m-0 cursor-pointer border-none bg-transparent px-1.5 pb-0.5 pt-5 text-slate-100 outline-none transition-all ease-linear before:absolute before:top-0 before:left-1/2 before:z-30 before:box-border before:block before:-translate-x-1/2 before:border-2 before:border-solid before:border-current before:bg-white before:transition-all before:ease-linear before:content-[''] after:absolute after:left-[calc(-50%-13px/2)] after:z-10 after:block after:h-0.5 after:w-full after:bg-current after:transition-all after:ease-linear after:content-[''] sm:indent-0" title="Pricing">4. Pricing</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -mx-3">
+        <div class="w-full max-w-full px-3 m-auto flex-0 lg:w-8/12">
+          <form class="relative mb-32">
+            <div active form="info" class="absolute top-0 left-0 flex flex-col visible w-full h-auto min-w-0 p-4 break-words bg-white border-0 opacity-100 dark:bg-gray-950 dark:shadow-soft-dark-xl shadow-soft-xl rounded-2xl bg-clip-border">
+              <h5 class="mb-0 font-bold dark:text-white">Product Information</h5>
+              <div>
+                <div class="flex flex-wrap mt-4 -mx-3">
+                  <div class="w-full max-w-full px-3 flex-0 sm:w-6/12">
+                    <label class="mt-6 mb-2 ml-1 font-bold text-xs text-slate-700 dark:text-white/80" for="ProductName">Name</label>
+                    <input type="text" name="ProductName" placeholder="eg. Off-White" class="focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none" />
+                  </div>
+                  <div class="w-full max-w-full px-3 flex-0 sm:mt-0 sm:w-6/12">
+                    <label class="mt-6 mb-2 ml-1 font-bold text-xs text-slate-700 dark:text-white/80" for="Weight">Weight</label>
+                    <input type="text" name="Weight" placeholder="eg. 42" class="focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none" />
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3">
+                  <div class="w-full max-w-full px-3 flex-0 sm:w-6/12">
+                    <label class="mt-6 mb-2 ml-1 font-bold text-xs text-slate-700 dark:text-white/80" for="Description">Description<small> (optional)</small></label>
+                    <div editor-quill id="editor" class="!h-1/2">
+                      <p>Some initial <strong>bold</strong> text</p>
+                    </div>
+                  </div>
+                  <div class="w-full max-w-full px-3 flex-0 sm:mt-0 sm:w-6/12">
+                    <label class="mt-6 mb-2 ml-1 font-bold text-xs text-slate-700 dark:text-white/80" for="choices-category">Category</label>
+                    <select choice name="choices-category" choices-select>
+                      <option value="Choice 1" selected="">Clothing</option>
+                      <option value="Choice 2">Real Estate</option>
+                      <option value="Choice 3">Electronics</option>
+                      <option value="Choice 4">Furniture</option>
+                      <option value="Choice 5">Others</option>
+                    </select>
+                    <label class="mb-2 ml-1 font-bold text-xs text-slate-700 dark:text-white/80" for="Sizes">Sizes</label>
+                    <select  name="choices-sizes" choices-select>
+                      <option value="Choice 1" selected="">Medium</option>
+                      <option value="Choice 2">Small</option>
+                      <option value="Choice 3">Large</option>
+                      <option value="Choice 4">Extra Large</option>
+                      <option value="Choice 5">Extra Small</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="flex mt-6">
+                  <button type="button" aria-controls="media" next-form-btn href="javascript:;" class="inline-block px-6 py-3 mb-0 ml-auto font-bold text-right text-white uppercase align-middle transition-all border-0 rounded-lg cursor-pointer hover:scale-102 active:opacity-85 hover:shadow-soft-xs dark:bg-gradient-to-tl dark:from-slate-850 dark:to-gray-850 bg-gradient-to-tl from-gray-900 to-slate-800 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25">Next</button>
+                </div>
+              </div>
+            </div>
+            <div form="media" class="absolute top-0 left-0 flex flex-col invisible w-full h-0 min-w-0 p-4 break-words bg-white border-0 opacity-0 dark:bg-gray-950 dark:shadow-soft-dark-xl shadow-soft-xl rounded-2xl bg-clip-border">
+              <h5 class="font-bold dark:text-white">Media</h5>
+              <div>
+                <div class="flex flex-wrap mt-4 -mx-3">
+                  <div class="w-full max-w-full px-3 flex-0">
+                    <label class="mb-2 ml-1 font-bold text-xs text-slate-700 dark:text-white/80" for="Product Image">Product Image</label>
+                    <div action="/file-upload" dropzone class="focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none form-control dropzone" id="dropzone"></div>
+                  </div>
+                </div>
+                <div class="flex mt-6">
+                  <button type="button" aria-controls="info" prev-form-btn href="javascript:;" class="inline-block px-6 py-3 mb-0 font-bold text-right uppercase align-middle transition-all border-0 rounded-lg cursor-pointer hover:scale-102 active:opacity-85 hover:shadow-soft-xs bg-gradient-to-tl from-gray-400 to-gray-100 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 text-slate-800">Prev</button>
+                  <button type="button" aria-controls="socials" next-form-btn href="javascript:;" class="inline-block px-6 py-3 mb-0 ml-auto font-bold text-right text-white uppercase align-middle transition-all border-0 rounded-lg cursor-pointer hover:scale-102 active:opacity-85 hover:shadow-soft-xs dark:bg-gradient-to-tl dark:from-slate-850 dark:to-gray-850 bg-gradient-to-tl from-gray-900 to-slate-800 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25">Next</button>
+                </div>
+              </div>
+            </div>
+            <div form="socials" class="absolute top-0 left-0 flex flex-col invisible w-full h-0 min-w-0 p-4 break-words bg-white border-0 opacity-0 dark:bg-gray-950 dark:shadow-soft-dark-xl shadow-soft-xl rounded-2xl bg-clip-border">
+              <h5 class="font-bold dark:text-white">Socials</h5>
+              <div>
+                <div class="flex flex-wrap mt-4 -mx-3">
+                  <div class="w-full max-w-full px-3 flex-0">
+                    <label class="mb-2 ml-1 font-bold text-xs text-slate-700 dark:text-white/80" for="Shoppify Handle">Shoppify Handle</label>
+                    <input type="text" name="Shoppify Handle" placeholder="@soft" class="focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none" />
+                  </div>
+                </div>
+                <div class="flex flex-wrap mt-4 -mx-3">
+                  <div class="w-full max-w-full px-3 flex-0">
+                    <label class="mb-2 ml-1 font-bold text-xs text-slate-700 dark:text-white/80" for="Facebook Account">Facebook Account</label>
+                    <input type="text" name="Facebook Account" placeholder="https://..." class="focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none" />
+                  </div>
+                </div>
+                <div class="flex flex-wrap mt-4 -mx-3">
+                  <div class="w-full max-w-full px-3 flex-0">
+                    <label class="mb-2 ml-1 font-bold text-xs text-slate-700 dark:text-white/80" for="Instagram Account">Instagram Account</label>
+                    <input type="text" name="Instagram Account" placeholder="https://..." class="focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none" />
+                  </div>
+                </div>
+                <div class="flex mt-6">
+                  <button type="button" aria-controls="media" prev-form-btn href="javascript:;" class="inline-block px-6 py-3 mb-0 font-bold text-right uppercase align-middle transition-all border-0 rounded-lg cursor-pointer hover:scale-102 active:opacity-85 hover:shadow-soft-xs bg-gradient-to-tl from-gray-400 to-gray-100 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 text-slate-800">Prev</button>
+                  <button type="button" aria-controls="pricing" next-form-btn href="javascript:;" class="inline-block px-6 py-3 mb-0 ml-auto font-bold text-right text-white uppercase align-middle transition-all border-0 rounded-lg cursor-pointer hover:scale-102 active:opacity-85 hover:shadow-soft-xs dark:bg-gradient-to-tl dark:from-slate-850 dark:to-gray-850 bg-gradient-to-tl from-gray-900 to-slate-800 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25">Next</button>
+                </div>
+              </div>
+            </div>
+            <div form="pricing" class="absolute top-0 left-0 flex flex-col invisible w-full h-0 min-w-0 p-4 break-words bg-white border-0 opacity-0 dark:bg-gray-950 dark:shadow-soft-dark-xl shadow-soft-xl rounded-2xl bg-clip-border">
+              <h5 class="font-bold dark:text-white">Pricing</h5>
+              <div>
+                <div class="flex flex-wrap mt-4 -mx-3">
+                  <div class="w-3/12 max-w-full px-3 flex-0">
+                    <label class="mb-2 ml-1 font-bold text-xs text-slate-700 dark:text-white/80" for="Price">Price</label>
+                    <input type="text" name="Price" placeholder="99.00" class="focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none" />
+                  </div>
+                  <div class="w-4/12 max-w-full px-3 flex-0">
+                    <label class="mb-2 ml-1 font-bold text-xs text-slate-700 dark:text-white/80" for="choices-currency">Currency</label>
+                    <select name="choices-currency" choices-select>
+                      <option value="Choice 1" selected="">USD</option>
+                      <option value="Choice 2">EUR</option>
+                      <option value="Choice 3">GBP</option>
+                      <option value="Choice 4">CNY</option>
+                      <option value="Choice 5">INR</option>
+                      <option value="Choice 6">BTC</option>
+                    </select>
+                  </div>
+                  <div class="w-5/12 max-w-full px-3 flex-0">
+                    <label class="mb-2 ml-1 font-bold text-xs text-slate-700 dark:text-white/80" for="SKU">SKU</label>
+                    <input type="text" name="SKU" placeholder="71283476591" class="focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none" />
+                  </div>
+                  <!-- </div> -->
+                  <!-- <div class="flex flex-wrap mt-4 -mx-3"> -->
+                  <div class="w-full max-w-full px-3 mt-4 flex-0">
+                    <label class="mb-2 ml-1 font-bold text-xs text-slate-700 dark:text-white/80" for="Tags">Tags</label>
+                    <input choice name="Tags" id="choices-multiple-remove-button" type="text" value="In Stock, Out of Stock" placeholder="Enter something" />
+                  </div>
+                </div>
+                <div class="flex mt-6">
+                  <button type="button" aria-controls="socials" prev-form-btn href="javascript:;" class="inline-block px-6 py-3 mb-0 font-bold text-right uppercase align-middle transition-all border-0 rounded-lg cursor-pointer hover:scale-102 active:opacity-85 hover:shadow-soft-xs bg-gradient-to-tl from-gray-400 to-gray-100 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 text-slate-800">Prev</button>
+                  <button type="button" send-form-btn href="javascript:;" class="inline-block px-6 py-3 mb-0 ml-auto font-bold text-right text-white uppercase align-middle transition-all border-0 rounded-lg cursor-pointer hover:scale-102 active:opacity-85 hover:shadow-soft-xs dark:bg-gradient-to-tl dark:from-slate-850 dark:to-gray-850 bg-gradient-to-tl from-gray-900 to-slate-800 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25">Send</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,8 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "scripts": {
-    "build": "tailwindcss build -i src/styles.css -o build/assets/css/soft-ui-dashboard-tailwind.css",
-    "dev": "bundle exec jekyll serve"
+    "dev": "vite",
+    "build": "vite build",
+    "build:dev": "vite build --mode development",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
@@ -67,6 +69,5 @@
     "tailwindcss-transforms": "^2.2.0",
     "vaul": "^1.1.2",
     "vite": "^7.0.4"
-    "build:dev": "vite build --mode development"
   }
 }

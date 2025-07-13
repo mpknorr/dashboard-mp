@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'jekyll-tailwindui', '~> 0.2.0'
+gem 'jekyll-paginate'
+gem 'jekyll-sitemap'
+gem 'jekyll-feed'
+gem 'jekyll-seo-tag'
+gem 'jekyll-include-cache'
+gem 'jekyll-redirect-from'
+gem 'jekyll-gist'
+gem 'jekyll-avatar'

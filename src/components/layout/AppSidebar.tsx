@@ -61,7 +61,8 @@ const ecommerceItems = [
 ];
 
 export function AppSidebar() {
-  const { collapsed } = useSidebar();
+  const { state } = useSidebar();
+  const collapsed = state === "collapsed";
   const location = useLocation();
   const currentPath = location.pathname;
 
@@ -75,7 +76,7 @@ export function AppSidebar() {
     isActive ? "bg-primary/10 text-primary font-medium" : "hover:bg-muted/50";
 
   return (
-    <Sidebar className={collapsed ? "w-14" : "w-64"} collapsible>
+    <Sidebar className={collapsed ? "w-14" : "w-64"}>
       <div className="p-4 border-b">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
@@ -86,7 +87,7 @@ export function AppSidebar() {
       </div>
 
       <SidebarContent>
-        <SidebarGroup defaultOpen>
+        <SidebarGroup>
           <SidebarGroupLabel>Dashboards</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
